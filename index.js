@@ -3,17 +3,17 @@ const cors = require ('cors')
 const Pusher = require("pusher");
 
 const pusher = new Pusher({
-  appId: "1353078",
-  key: "7eea952f1003fc3d6667",
-  secret: "f87b777a7f1ec87a127c",
-  cluster: "mt1",
+  appId: "",
+  key: "",
+  secret: "",
+  cluster: "",
   useTLS: true
 });
 
 const app = express()
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:8080', 'http://localhost:4200' ]   
+    origin: ['http://localhost:3000']   
     
 }))
 
