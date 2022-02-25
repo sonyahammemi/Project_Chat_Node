@@ -13,7 +13,7 @@ const pusher = new Pusher({
 const app = express()
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:8080', 'http://localhost:4200' ]  //3000:reactjs  8080:vuejs 4200:angular 
+    origin: ['http://localhost:3000', 'http://localhost:8080', 'http://localhost:4200' ]   
     
 }))
 
@@ -32,6 +32,6 @@ console.log('listening to port 8000');
 app.listen(8000)
 
 
-//www.pusher
+
 
 
