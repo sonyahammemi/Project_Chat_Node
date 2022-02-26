@@ -3,17 +3,18 @@ const cors = require ('cors')
 const Pusher = require("pusher");
 
 const pusher = new Pusher({
-  appId: "",
-  key: "",
-  secret: "",
-  cluster: "",
+  appId: "1353078",
+  key: "7eea952f1003fc3d6667",
+  secret: "f87b777a7f1ec87a127c",
+  cluster: "mt1",
   useTLS: true
 });
 
 const app = express()
 
 app.use(cors({
-    origin: ['http://localhost:3000']   
+    origin: ['http://localhost:3000' ]   
+
     
 }))
 
@@ -30,6 +31,7 @@ app.post('/api/messages', async(req,res) => {
 
 console.log('listening to port 8000');
 app.listen(8000)
+
 
 
 
